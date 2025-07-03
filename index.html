@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <script defer type="module" src="src/script.js"></script>
+    <link rel="shortcut icon" href="src/assets/icon.svg" type="image/x-icon">
+</head>
+
+<body
+    class="min-h-screen min-w-screen flex justify-center items-center bg-gradient-to-br from-blue-900 via-black to-gray-900">
+    <div class="w-full max-w-xl mt-24 p-8 border rounded-2xl border-white bg-white/10 shadow-2xl backdrop-blur-md">
+        <h1 class="font-bold text-4xl p-3 text-white text-center drop-shadow-lg">
+            Currency Converter
+        </h1>
+        <div id="input" class="w-4/5 mx-auto text-center py-5">
+            <input type="text" name="amount" id="inputValue" placeholder="Enter Amount"
+                class="bg-white/90 w-full p-4 rounded-2xl text-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-md transition" />
+        </div>
+        <div class="flex justify-between text-2xl p-4">
+            <!-- From currency -->
+            <div>
+                <div>
+                    <span class="text-white text-xl">
+                        From
+                    </span>
+                </div>
+                <div class="flex border border-white bg-white rounded-xl">
+                    <div class="">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="US flag" class="h-[50px]">
+                    </div>
+                    <select name="countryFrom" id="FromCountry"
+                        class="currency-select bg-white h-[50px] w-fit rounded-xl">
+                        <option value="US" selected>USD</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Currency icon (SVG arrow) -->
+            <div id="symbol" class="flex items-center mx-4">
+                <img src="src/assets/icon.svg" alt="swap" id="swapIcon" class="scale-200 mt-7 cursor-pointer">
+            </div>
+
+            <!-- To currency -->
+            <div>
+                <div>
+                    <span class="text-white text-xl">To</span>
+                </div>
+                <div class="flex border border-white bg-white rounded-xl">
+                    <div class="">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="IN flag" class="h-[50px]">
+                    </div>
+                    <select name="countryTo" id="ToCountry" class="currency-select bg-white h-[50px] w-fit rounded-xl">
+                        <option value="IN" selected>INR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="result"
+            class="mt-8 text-2xl font-semibold text-blue-300 text-center p-4 rounded-xl bg-black/60 shadow"></div>
+        <button
+            class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition">
+            Convert
+        </button>
+    </div>
+
+</body>
+
+</html>
