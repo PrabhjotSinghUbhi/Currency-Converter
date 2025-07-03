@@ -6,7 +6,7 @@ A sleek, real-time **currency converter web app** built with HTML, CSS, and Java
 
 ## 🌍 Live Demo
 
-> **Hosted Link:** [app link here](#https://currency-converter-snowy-three.vercel.app/)
+> **Hosted Link:** [https://currency-converter-snowy-three.vercel.app/](https://currency-converter-snowy-three.vercel.app/)
 
 ---
 
